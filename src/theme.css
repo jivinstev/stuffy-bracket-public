@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+  --text-base: 16px;
+  --text-base--line-height: 24px;
+  --text-lg: 18px;
+  --text-lg--line-height: 28px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-2xl: 24px;
+  --text-2xl--line-height: 32px;
+  --text-3xl: 30px;
+  --text-3xl--line-height: 36px;
+  --text-4xl: 36px;
+  --text-4xl--line-height: 40px;
+  --text-5xl: 48px;
+  --text-5xl--line-height: 52px;
+  --font-fredoka: "Fredoka", ui-rounded, system-ui, sans-serif;
+  --font-dm: "DM Sans", system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light dark;
+  --bg: #fff7ed;
+  --surface: #ffffff;
+  --text: #2b2118;
+  --dim: #7c6b5b;
+  --border: #e8ddd1;
+  --accent: #7c3aed;
+  --accent-2: #facc15;
+  --win: #ff6b4a;
+  --sage: #6b9e7a;
+  --round: #fff1df;
+  --current: #fff9d7;
+  --accent-soft: #e9d5ff;
+  --danger: #b73c2f;
+  --danger-soft: #fff0ed;
+  --radius: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1410;
+    --surface: #261c18;
+    --text: #f7ede2;
+    --dim: #b89a7d;
+    --border: #3a2820;
+    --accent: #a978ff;
+    --accent-2: #facc15;
+    --win: #ff7b5a;
+    --sage: #7db88d;
+    --round: #31231c;
+    --current: #382f1c;
+    --accent-soft: #5e3d86;
+    --danger: #ff806f;
+    --danger-soft: #3b201d;
+  }
+}
+
+html, body { font-family: var(--font-dm); }
+h1,h2,.fredoka { font-family: var(--font-fredoka); }
