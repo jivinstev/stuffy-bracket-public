@@ -197,6 +197,7 @@ export function App() {
                               aria-label={`Match ${matchIndex + 1}, ${entrantIndex === firstIndex ? "first" : "second"} combatant name`}
                               value={names[entrantIndex] ?? ""}
                               onChange={e=>{ const n=[...names]; n[entrantIndex]=e.target.value; setNames(n); }}
+                              onFocus={e=>e.target.select()}
                               placeholder={`Stuffy #${entrantIndex + 1}`}
                               className="min-w-0 flex-1 bg-transparent text-[15px] outline-none"
                             />
